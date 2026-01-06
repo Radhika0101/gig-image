@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gig Image</title>
+  <title>Excel Gig Images</title>
+
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: #f4f6f8;
+      padding: 40px;
+      background: #f2f4f7;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Excel sheet background */
+    .excel-bg {
+      background-image:
+        linear-gradient(#e0e0e0 1px, transparent 1px),
+        linear-gradient(90deg, #e0e0e0 1px, transparent 1px);
+      background-size: 40px 40px;
     }
 
     .card {
-      width: 800px;
-      height: 450px;
-      background: linear-gradient(135deg, #1e3c72, #2a5298);
-      color: white;
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      box-sizing: border-box;
+      width: 900px;
+      height: 500px;
       border-radius: 20px;
+      padding: 50px;
+      box-sizing: border-box;
+      color: white;
+      margin-bottom: 50px;
+      position: relative;
     }
 
     h1 {
-      font-size: 42px;
-      margin-bottom: 12px;
+      font-size: 44px;
+      margin-bottom: 15px;
     }
 
     p {
       font-size: 22px;
+      margin-bottom: 30px;
     }
 
-    .badge {
-      margin-top: 30px;
-      background: #ffcc00;
+    .tag {
+      display: inline-block;
+      background: #ffd700;
+      color: black;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    /* Package colors */
+    .basic {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+    }
+
+    .standard {
+      background: linear-gradient(135deg, #134e5e, #71b280);
+    }
+
+    .premium {
+      background: linear-gradient(135deg, #42275a, #734b6d);
+    }
+  </style>
+</head>
+
+<body class="excel-bg">
+
+  <!-- BASIC -->
+  <div class="card basic">
+    <h1>Excel Data Cleaning</h1>
+    <p>Remove Errors • Fix Formats • Clean Data</p>
+    <div class="tag">BASIC PACKAGE</div>
+  </div>
+
+  <!-- STANDARD -->
+  <div class="card standard">
+    <h1>Excel Reports & Formatting</h1>
+    <p>Professional Tables • Clean Layout • Accuracy</p>
+    <div class="tag">STANDARD PACKAGE</div>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="card premium">
+    <h1>Excel Data Analysis</h1>
+    <p>Insights • Dashboards • Smart Reports</p>
+    <div class="tag">PREMIUM PACKAGE</div>
+  </div>
+
+</body>
+</html>      background: #ffcc00;
       color: black;
       padding: 10px 20px;
       display: inline-block;
