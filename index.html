@@ -1,116 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Excel Gig Banner</title>
+  <meta charset="UTF-8" />
+  <title>Excel Gig Banner</title>
 
-<style>
-body {
-  margin: 0;
-  background: #e9f3ee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
-}
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e9f3ee;
+      font-family: Arial, sans-serif;
+    }
 
-/* Main banner */
-.banner {
-  width: 1200px;
-  height: 600px;
-  background: linear-gradient(135deg, #1f7a4d, #0f5132);
-  border-radius: 20px;
-  display: flex;
-  padding: 40px;
-  box-sizing: border-box;
-  color: white;
-}
+    /* Main banner */
+    .banner {
+      width: 1200px;
+      height: 600px;
+      background: linear-gradient(135deg, #1f7a4d, #0f5132);
+      border-radius: 20px;
+      display: flex;
+      padding: 40px;
+      box-sizing: border-box;
+      color: white;
+    }
 
-/* Left content */
-.left {
-  width: 60%;
-}
+    /* Left content */
+    .left {
+      width: 60%;
+    }
 
-.small-text {
-  font-size: 28px;
-  font-family: cursive;
-  opacity: 0.9;
-}
+    .small-text {
+      font-size: 28px;
+      font-family: cursive;
+      opacity: 0.9;
+    }
 
-.main-title {
-  font-size: 72px;
-  font-weight: bold;
-  margin: 10px 0;
-}
+    .main-title {
+      font-size: 72px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
 
-.sub-title {
-  font-size: 32px;
-  margin-bottom: 25px;
-}
+    .sub-title {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
 
-/* Features */
-.feature {
-  font-size: 22px;
-  margin-bottom: 12px;
-}
+    .feature {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
 
-.feature::before {
-  content: "✔ ";
-  color: #00ff9c;
-  font-weight: bold;
-}
+    .feature::before {
+      content: "✔ ";
+      color: #00ff9c;
+      font-weight: bold;
+    }
 
-/* Button */
-.button {
-  margin-top: 30px;
-  display: inline-block;
-  background: #0d6efd;
-  color: white;
-  padding: 16px 32px;
-  border-radius: 50px;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .button {
+      margin-top: 30px;
+      display: inline-block;
+      background: #0d6efd;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-/* Right image */
-.right {
-  width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    /* Right photo section */
+    .right {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.right img {
-  height: 100%;
-  border-radius: 15px;
-}
-</style>
+    /* Photo mask (code-based background removal effect) */
+    .photo-mask {
+      width: 380px;
+      height: 500px;
+      background-image: url("my-photo.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="banner">
+  <div class="banner">
 
-  <div class="left">
-    <div class="small-text">Professional</div>
+    <div class="left">
+      <div class="small-text">Professional</div>
 
-    <div class="main-title">EXCEL VBA</div>
+      <div class="main-title">EXCEL VBA</div>
 
-    <div class="sub-title">Solutions for Automation & Efficiency</div>
+      <div class="sub-title">
+        Solutions for Automation & Efficiency
+      </div>
 
-    <div class="feature">Automate Excel Tasks</div>
-    <div class="feature">Expert VBA Macros</div>
-    <div class="feature">Save Time & Reduce Errors</div>
+      <div class="feature">Automate Excel Tasks</div>
+      <div class="feature">Expert VBA Macros</div>
+      <div class="feature">Save Time & Reduce Errors</div>
 
-    <a href="#" class="button">ORDER NOW</a>
+      <a href="#" class="button">ORDER NOW</a>
+    </div>
+
+    <div class="right">
+      <div class="photo-mask"></div>
+    </div>
+
   </div>
-
-  <div class="right">
-    <img src="https://i.imgur.com/6QKQZ6G.png" alt="Person Image">
-  </div>
-
-</div>
 
 </body>
 </html>
